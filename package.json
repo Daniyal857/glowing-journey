@@ -4,7 +4,7 @@
   "description": "A website that uses single page responsive CSS with Sass, Compass, Susy 2, etc",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/Daniyal857/glowing-journey.git"
   },
   "author": "Daniyal Khan",
   "devDependencies": {
