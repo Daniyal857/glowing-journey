@@ -4,6 +4,11 @@ body {
   height: 100%;
 }
 
+body section.row, body header.row, body footer.row {
+  margin: 0;
+  position: relative;
+}
+
 .scene {
   position: relative;
   padding: 20px 0;

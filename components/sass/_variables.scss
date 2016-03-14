@@ -6,7 +6,7 @@
 //Susy Global Settings
 $susy: (
   columns: 12,
-  container: 60em,
+  container: 70em,
   gutters: 1/4,
   gutter-position: inside
 );
@@ -26,7 +26,7 @@ $backgroundColor : $light;
 $typeDefault     : $dark;
 $navBackground   : $blue;
 $navForeground   : $light;
-$navHover        : $yellow;
+$navHover        : $light;
 $navBrandBg      : $red;
 $headersubbg     : $dark;
 

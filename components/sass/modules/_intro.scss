@@ -1,45 +1,73 @@
-header {
-  .fullheight {
-    @include backImage('../images/hotel/splash_hotelphoto.jpg');
-    @include display-flex();
-    @include align-items(center);
-    @include justify-content(center);
+.top_header {
+  line-height: 150%;
+  border-bottom: 1px solid $dark;
+  .container {
+    @include container(70%);
+    .nav-pills {
+      li {
+        float: right;
+        a {
+          position: relative;
+          display: block;
+          padding: 0;
+          font-family: $fontfamily;
+          font-size: 1em;
+          color: lighten($dark, 30);
+          text-transform: uppercase;
+          text-decoration: none;
+          i {
+            margin-right: 12px;
+          }// i
+        }// a
+      }// li
+      li:first-child {
+        margin-right: 15px;
+      }
+      li:nth-child(2) {
+        margin-right: 15px;
+      }
+    }// .nav-pills
 
-    .hgroup {
-      @include container(95%);
-      margin: 100px 0;
 
-      h1 {
-        color: white;
-        font-size: 5em;
-        font-weight: $heavy;
-        line-height: .8em;
-        @include text-shadow($dark 0 0 20px);
-        text-transform: capitalize;
-        text-align: center;
+    .wc_msg {
+      @include clearfix;
 
-      } //h1
+      @include breakpoint($small) {
+        @include span(4);
+        font-size: 1em;
+        font-weight: $thin;
+      }// breakpoint
+      @include breakpoint($medium) {
+        @include container(100%);
+      }// breakpoint
+      @include breakpoint($wide) {
+        @include container(100%);
+        @include span(5);
+      }// breakpoint
+    }// .wc_msg
 
-      h2 {
-        @include container(50%);
-        color: $light;
-        z-index: 10;
-        margin-top: 15px;
-        font-size: 1.3em;
-        padding: 10px;
-        border: 1px solid $light;
-        text-transform: capitalize;
-        text-align: center;
-        background: rgba($headersubbg, .5);
-      } //h2
-
-      p {
-        text-align: center;
-        img {
-          padding-top: 50px;
-          max-width: 50px;
-        } //img
-      } //p
-    } //hgroup
-  } //fullheight
-} //header
+    .nav-pills {
+      @include breakpoint($small) {
+        @include span(8);
+        display: inline-block;
+        position: relative;
+          li {
+            float: left;
+            a {
+              padding: 0;
+              font-size: 0.9em;
+            }
+          }//li
+        }//breakpoint
+      @include breakpoint($medium) {
+        @include container(100%);
+        float: right;
+      }// Breakpoint
+      @include breakpoint($wide) {
+        @include container(100%);
+        @include span(6);
+        float: right;
+      }// breakpoint
+      }// .nav-pills
+  }// .container
+}// .top_header
