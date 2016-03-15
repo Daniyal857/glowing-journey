@@ -1,0 +1,55 @@
+// clients.scss
+// =================
+
+.clients {
+  position: relative;
+  padding: 40px 0 80px;
+  background: lighten($blue, 83.9%);
+  .container {
+    @include container;
+    .sectionTitle {
+      text-align: center;
+      margin-bottom: 50px;
+      h5 {
+        font-size: 1em;
+        font-weight: $bold;
+        line-height: 150%;
+        color: $dark;
+        text-transform: uppercase;
+      }//h5
+      h2 {
+        font-size: 3em;
+        font-weight: $thin;
+        line-height: 150%;
+        color: $dark;
+        text-transform: uppercase;
+      }// h2
+    }// .sectionTitle
+    .nav-justified {
+      @include container(100%);
+      li {
+        float: none;
+        @include breakpoint($small) {
+          @include span(1.7);
+        }//breakpoint
+        @include breakpoint($medium) {
+
+        }// Breakpoint
+
+        a {
+          position: relative;
+          display: block;
+          padding: 10px;
+          text-align: center;
+          margin: 0;
+
+          img {
+            @include breakpoint($wide) {
+              max-width: 100%;
+            }
+          }
+        }// a
+      }// li
+    }//.nav-justified
+  }// .container
+}// .clients
