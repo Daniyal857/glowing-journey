@@ -44,9 +44,7 @@
           margin: 0;
 
           img {
-            @include breakpoint($wide) {
               max-width: 100%;
-            }
           }
         }// a
       }// li

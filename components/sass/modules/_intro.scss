@@ -1,8 +1,8 @@
 .top_header {
-  line-height: 150%;
+  line-height: 300%;
   border-bottom: 1px solid $dark;
   .container {
-    @include container(70%);
+    @include container;
     .nav-pills {
       li {
         float: right;
@@ -28,29 +28,32 @@
       }
     }// .nav-pills
 
-
     .wc_msg {
       @include clearfix;
-
+      font-size: 1em;
+      @include breakpoint(max-width $small) {
+        display: none;
+      }
       @include breakpoint($small) {
         @include span(4);
-        font-size: 1em;
-        font-weight: $thin;
+        font-size: 0.9em;
       }// breakpoint
       @include breakpoint($medium) {
-        @include container(100%);
+        @include span(5);
+        font-size: 1em;
       }// breakpoint
       @include breakpoint($wide) {
-        @include container(100%);
         @include span(5);
+        font-size: 1em;
       }// breakpoint
     }// .wc_msg
 
     .nav-pills {
       @include breakpoint($small) {
         @include span(8);
-        display: inline-block;
+        display: block;
         position: relative;
+        text-align: justify;
           li {
             float: left;
             a {
@@ -65,7 +68,6 @@
       }// Breakpoint
       @include breakpoint($wide) {
         @include container(100%);
-        @include span(6);
         float: right;
       }// breakpoint
       }// .nav-pills

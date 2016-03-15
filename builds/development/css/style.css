@@ -149,12 +149,12 @@ body section.row, body header.row, body footer.row {
 
 /* line 1, ../../../components/sass/modules/_intro.scss */
 .top_header {
-  line-height: 150%;
+  line-height: 300%;
   border-bottom: 1px solid #000000;
 }
 /* line 4, ../../../components/sass/modules/_intro.scss */
 .top_header .container {
-  max-width: 70%;
+  max-width: 70em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -191,6 +191,10 @@ body section.row, body header.row, body footer.row {
 .top_header .container .nav-pills li:nth-child(2) {
   margin-right: 15px;
 }
+/* line 31, ../../../components/sass/modules/_intro.scss */
+.top_header .container .wc_msg {
+  font-size: 1em;
+}
 /* line 24, ../../../components/sass/_mixins.scss */
 .top_header .container .wc_msg:before, .top_header .container .wc_msg:after {
   content: "";
@@ -200,8 +204,14 @@ body section.row, body header.row, body footer.row {
 .top_header .container .wc_msg:after {
   clear: both;
 }
+@media (max-width: 650px) {
+  /* line 31, ../../../components/sass/modules/_intro.scss */
+  .top_header .container .wc_msg {
+    display: none;
+  }
+}
 @media (min-width: 650px) {
-  /* line 32, ../../../components/sass/modules/_intro.scss */
+  /* line 31, ../../../components/sass/modules/_intro.scss */
   .top_header .container .wc_msg {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -210,30 +220,12 @@ body section.row, body header.row, body footer.row {
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
-    font-size: 1em;
-    font-weight: 200;
+    font-size: 0.9em;
   }
 }
 @media (min-width: 960px) {
-  /* line 32, ../../../components/sass/modules/_intro.scss */
+  /* line 31, ../../../components/sass/modules/_intro.scss */
   .top_header .container .wc_msg {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  /* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-  .top_header .container .wc_msg:after {
-    content: " ";
-    display: block;
-    clear: both;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 32, ../../../components/sass/modules/_intro.scss */
-  .top_header .container .wc_msg {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -241,16 +233,24 @@ body section.row, body header.row, body footer.row {
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
+    font-size: 1em;
   }
-  /* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-  .top_header .container .wc_msg:after {
-    content: " ";
-    display: block;
-    clear: both;
+}
+@media (min-width: 1200px) {
+  /* line 31, ../../../components/sass/modules/_intro.scss */
+  .top_header .container .wc_msg {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 41.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    font-size: 1em;
   }
 }
 @media (min-width: 650px) {
-  /* line 49, ../../../components/sass/modules/_intro.scss */
+  /* line 51, ../../../components/sass/modules/_intro.scss */
   .top_header .container .nav-pills {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -259,21 +259,22 @@ body section.row, body header.row, body footer.row {
     float: left;
     padding-left: 0.83333%;
     padding-right: 0.83333%;
-    display: inline-block;
+    display: block;
     position: relative;
+    text-align: justify;
   }
-  /* line 54, ../../../components/sass/modules/_intro.scss */
+  /* line 57, ../../../components/sass/modules/_intro.scss */
   .top_header .container .nav-pills li {
     float: left;
   }
-  /* line 56, ../../../components/sass/modules/_intro.scss */
+  /* line 59, ../../../components/sass/modules/_intro.scss */
   .top_header .container .nav-pills li a {
     padding: 0;
     font-size: 0.9em;
   }
 }
 @media (min-width: 960px) {
-  /* line 49, ../../../components/sass/modules/_intro.scss */
+  /* line 51, ../../../components/sass/modules/_intro.scss */
   .top_header .container .nav-pills {
     max-width: 100%;
     margin-left: auto;
@@ -288,18 +289,11 @@ body section.row, body header.row, body footer.row {
   }
 }
 @media (min-width: 1200px) {
-  /* line 49, ../../../components/sass/modules/_intro.scss */
+  /* line 51, ../../../components/sass/modules/_intro.scss */
   .top_header .container .nav-pills {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 50%;
-    float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
     float: right;
   }
   /* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
@@ -808,9 +802,7 @@ footer #socialmedia ul li img {
   text-align: center;
   margin: 0;
 }
-@media (min-width: 1200px) {
-  /* line 46, ../../../components/sass/modules/_clients.scss */
-  .clients .container .nav-justified li a img {
-    max-width: 100%;
-  }
+/* line 46, ../../../components/sass/modules/_clients.scss */
+.clients .container .nav-justified li a img {
+  max-width: 100%;
 }
