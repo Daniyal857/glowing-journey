@@ -47,21 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_nav.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/sass/modules/_nav.scss">
+      <file leaf-file-name="_intro.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/sass/modules/_intro.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.384615">
-              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="47" />
+            <state vertical-scroll-proportion="-13.192307">
+              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_intro.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/components/sass/modules/_intro.scss">
+      <file leaf-file-name="_nav.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/sass/modules/_nav.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4021102">
-              <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.32239157">
+              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -77,7 +77,6 @@
       <list>
         <option value="$PROJECT_DIR$/components/sass/_layout.scss" />
         <option value="$PROJECT_DIR$/components/sass/modules/WhyChoose.scss" />
-        <option value="$PROJECT_DIR$/components/sass/modules/_nav.scss" />
         <option value="$PROJECT_DIR$/components/sass/modules/_whyChoose.scss" />
         <option value="$PROJECT_DIR$/components/sass/style.scss" />
         <option value="$PROJECT_DIR$/components/sass/_mixins.scss" />
@@ -85,6 +84,7 @@
         <option value="$PROJECT_DIR$/components/sass/modules/_clients.scss" />
         <option value="$PROJECT_DIR$/components/sass/_variables.scss" />
         <option value="$PROJECT_DIR$/components/sass/modules/_intro.scss" />
+        <option value="$PROJECT_DIR$/components/sass/modules/_nav.scss" />
       </list>
     </option>
   </component>
@@ -509,18 +509,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/sass/modules/_nav.scss">
+    <entry file="file://$PROJECT_DIR$/components/sass/modules/_intro.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="47" />
+        <state vertical-scroll-proportion="-13.192307">
+          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/sass/modules/_intro.scss">
+    <entry file="file://$PROJECT_DIR$/components/sass/modules/_nav.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4021102">
-          <caret line="50" column="16" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.32239157">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding />
         </state>
       </provider>

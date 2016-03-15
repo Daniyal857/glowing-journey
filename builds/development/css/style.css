@@ -349,12 +349,12 @@ body section.row, body header.row, body footer.row {
   font-size: 1.5em;
 }
 @media (max-width: 650px) {
-  /* line 24, ../../../components/sass/modules/_nav.scss */
-  .navbar .container .navbar-header a span {
-    display: none;
+  /* line 16, ../../../components/sass/modules/_nav.scss */
+  .navbar .container .navbar-header a {
+    font-size: 1.1em !important;
   }
 }
-@media (min-width: 650px) and (max-width: 960px) {
+@media (max-width: 960px) {
   /* line 16, ../../../components/sass/modules/_nav.scss */
   .navbar .container .navbar-header a {
     font-size: 1.4em;
@@ -411,7 +411,7 @@ body section.row, body header.row, body footer.row {
 @media (min-width: 650px) and (max-width: 960px) {
   /* line 36, ../../../components/sass/modules/_nav.scss */
   .navbar .container ul li a {
-    padding: 12px 10px;
+    padding: 12px 5px;
     line-height: 150%;
     font-size: 0.9em;
   }

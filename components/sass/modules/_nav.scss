@@ -21,9 +21,9 @@
           padding: 10px;
           font-size: 1.5em;
           @include breakpoint( max-width $small ) {
-            span  { display: none; }
+            font-size: 1.1em !important;
           } //breakpoint
-          @include breakpoint($small $medium) {
+          @include breakpoint(max-width $medium) {
             font-size: 1.4em;
           }//breakpoint
         } //a
@@ -61,7 +61,7 @@
                   } //span
                 }
                 @include breakpoint($small $medium) {
-                  padding: 12px 10px;
+                  padding: 12px 5px;
                   line-height: 150%;
                   font-size: 0.9em;
                   &.icon { background-image: none; }
