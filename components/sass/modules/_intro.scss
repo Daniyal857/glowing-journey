@@ -64,10 +64,12 @@
         }//breakpoint
       @include breakpoint($medium) {
         @include container(100%);
+        @include span(6);
         float: right;
       }// Breakpoint
       @include breakpoint($wide) {
         @include container(100%);
+        @include span(6);
         float: right;
       }// breakpoint
       }// .nav-pills
