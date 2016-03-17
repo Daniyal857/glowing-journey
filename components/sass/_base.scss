@@ -36,3 +36,59 @@ p {
   border: none;
   overflow: visible;
 }// .button
+
+
+
+/*Ancore*/
+a,
+.btn,
+button {
+  outline: none;
+  color: #42b6ff;
+  transition: all 300ms ease-in-out 0s;
+}
+a:before,
+.btn:before,
+button:before,
+a:after,
+.btn:after,
+button:after {
+  transition: all 300ms ease-in-out 0s;
+}
+a:focus,
+.btn:focus,
+button:focus,
+a:hover,
+.btn:hover,
+button:hover {
+  outline: none;
+  text-decoration: none;
+  transition: all 300ms ease-in-out 0s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,0.15);
+  @include border-radius(4px);
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.input-group-addon, .input-group-btn, .input-group .form-control {
+  display: table-cell;
+}

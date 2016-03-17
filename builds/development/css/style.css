@@ -116,6 +116,71 @@ p {
   overflow: visible;
 }
 
+/*Ancore*/
+/* line 43, ../../../components/sass/_base.scss */
+a,
+.btn,
+button {
+  outline: none;
+  color: #42b6ff;
+  transition: all 300ms ease-in-out 0s;
+}
+
+/* line 50, ../../../components/sass/_base.scss */
+a:before,
+.btn:before,
+button:before,
+a:after,
+.btn:after,
+button:after {
+  transition: all 300ms ease-in-out 0s;
+}
+
+/* line 58, ../../../components/sass/_base.scss */
+a:focus,
+.btn:focus,
+button:focus,
+a:hover,
+.btn:hover,
+button:hover {
+  outline: none;
+  text-decoration: none;
+  transition: all 300ms ease-in-out 0s;
+}
+
+/* line 69, ../../../components/sass/_base.scss */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 88, ../../../components/sass/_base.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 92, ../../../components/sass/_base.scss */
+.input-group-addon, .input-group-btn, .input-group .form-control {
+  display: table-cell;
+}
+
 /* line 1, ../../../components/sass/_layout.scss */
 body {
   position: absolute;
@@ -620,7 +685,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   background: #333333;
-  padding: 30px 0;
+  padding: 30px 0 0;
 }
 /* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 footer:after {
@@ -629,24 +694,236 @@ footer:after {
   clear: both;
 }
 /* line 5, ../../../components/sass/modules/_footer.scss */
-footer #socialmedia {
-  text-align: center;
+footer .container {
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+footer .container:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 /* line 7, ../../../components/sass/modules/_footer.scss */
-footer #socialmedia ul {
+footer .container .shortKnowledge {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+/* line 24, ../../../components/sass/_mixins.scss */
+footer .container .shortKnowledge:before, footer .container .shortKnowledge:after {
+  content: "";
+  display: table;
+}
+/* line 29, ../../../components/sass/_mixins.scss */
+footer .container .shortKnowledge:after {
+  clear: both;
+}
+/* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+footer .container .shortKnowledge:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 13, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .about h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+/* line 18, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .about h4 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* line 24, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .about p {
+  font-size: 0.9em;
+  font-weight: 200;
+  line-height: 120%;
+  color: #cccccc;
+}
+/* line 31, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .product {
+  position: relative;
+}
+/* line 33, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .product h4 {
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+/* line 38, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .product .product_list {
   list-style: none;
 }
-/* line 9, ../../../components/sass/modules/_footer.scss */
-footer #socialmedia ul li {
-  display: inline-block;
-  padding: 0 10px;
+/* line 40, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .product .product_list li {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin-top: 15px;
 }
-/* line 12, ../../../components/sass/modules/_footer.scss */
-footer #socialmedia ul li img {
-  width: 30px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+/* line 43, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .product .product_list li a {
+  float: left;
+  color: #cccccc;
+  line-height: 130%;
+  padding: 0;
+  transition: all 300ms ease-in-out 0s;
+  text-decoration: none;
+}
+/* line 50, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .product .product_list li a:hover {
+  color: #FFFFFF;
+  background: none;
+}
+/* line 54, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .product .product_list li a .fa-circle-thin {
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+/* line 62, ../../../components/sass/modules/_footer.scss */
+footer .container .shortKnowledge .col-sm-6 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+@media (max-width: 650px) {
+  /* line 66, ../../../components/sass/modules/_footer.scss */
+  footer .container .shortKnowledge .col-sm-6 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 71, ../../../components/sass/modules/_footer.scss */
+footer .container .beInContact {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-top: 1px solid #4d4d4d;
+}
+/* line 24, ../../../components/sass/_mixins.scss */
+footer .container .beInContact:before, footer .container .beInContact:after {
+  content: "";
+  display: table;
+}
+/* line 29, ../../../components/sass/_mixins.scss */
+footer .container .beInContact:after {
+  clear: both;
+}
+/* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+footer .container .beInContact:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 77, ../../../components/sass/modules/_footer.scss */
+footer .container .beInContact .social_icos {
+  padding: 38px 0 28px;
+  text-align: center;
+}
+/* line 24, ../../../components/sass/_mixins.scss */
+footer .container .beInContact .social_icos:before, footer .container .beInContact .social_icos:after {
+  content: "";
+  display: table;
+}
+/* line 29, ../../../components/sass/_mixins.scss */
+footer .container .beInContact .social_icos:after {
+  clear: both;
+}
+/* line 81, ../../../components/sass/modules/_footer.scss */
+footer .container .beInContact .social_icos .nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+}
+/* line 86, ../../../components/sass/modules/_footer.scss */
+footer .container .beInContact .social_icos .nav li {
+  position: relative;
+  display: block;
+  padding: 0 6px;
+  float: left;
+}
+/* line 91, ../../../components/sass/modules/_footer.scss */
+footer .container .beInContact .social_icos .nav li a {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding: 0;
+  height: 42px;
+  width: 42px;
+  line-height: 250%;
+  color: #FFFFFF;
+  background: #000000;
+  text-align: center;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+/* line 101, ../../../components/sass/modules/_footer.scss */
+footer .container .beInContact .social_icos .nav li a:hover {
+  color: #4d4d4d;
+}
+@media (max-width: 650px) {
+  /* line 109, ../../../components/sass/modules/_footer.scss */
+  footer .container .beInContact .social_icos {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+@media (max-width: 960px) {
+  /* line 114, ../../../components/sass/modules/_footer.scss */
+  footer .container .beInContact .social_icos {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  footer .container .beInContact .social_icos:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/* line 120, ../../../components/sass/modules/_footer.scss */
+footer .copyright_line {
+  text-align: center;
+  line-height: 150%;
+  padding: 25px 0;
+  background: #000000;
+  color: #FFFFFF;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-size: 0.8em;
 }
 
 /* line 4, ../../../components/sass/modules/_whyChoose.scss */
@@ -976,7 +1253,7 @@ footer #socialmedia ul li img {
 @media (min-width: 650px) {
   /* line 81, ../../../components/sass/modules/_different.scss */
   .different .container .differentSection {
-    padding-top: 0px;
+    padding-top: 100px;
   }
   /* line 85, ../../../components/sass/modules/_different.scss */
   .different .container .twoColumn {
