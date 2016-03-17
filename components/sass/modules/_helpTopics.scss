@@ -1,0 +1,95 @@
+// different.scss
+// ==============
+
+.helpTopics {
+  .container {
+    @include container;
+    position: relative;
+    display: block;
+    padding: 30px 0;
+    .text-left {
+
+      h5 {
+        font-size: 1em;
+        font-weight: $bold;
+        line-height: 1;
+        color: $dark;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: 3em;
+        font-weight: $thin;
+        line-height: 1;
+        color: $dark;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      p {
+        font-weight: $thin;
+        font-size: 1.125em;
+        line-height: 130%;
+        margin-bottom: 30px;
+      }
+    }
+    .topics {
+      .column4 {
+        @include span(4);
+        .text-box-right {
+          margin-bottom: 10px;
+          h5 {
+            margin: 10px 0;
+            color: $blue;
+          }// h5
+          li {
+            a {
+              text-decoration: none;
+              line-height: 130%;
+              color: lighten($dark, 20%);
+            }// a
+          }// li
+        }// .text-box-right
+      }//column4
+    }//topics
+    @include breakpoint(max-width $small) {
+      @include container(90%);
+      .topics {
+        .column4 {
+          @include span(6);
+          .text-box-right {
+            margin-bottom: 10px;
+            h5 {
+              margin: 10px 0;
+              color: $blue;
+            }// h5
+            li {
+              a {
+                text-decoration: none;
+                line-height: 130%;
+                color: lighten($dark, 20%);
+                font-size: 0.9em;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }// a
+            }// li
+          }// .text-box-right
+        }//column4
+      }//topics
+    }// breakpoint
+    @include breakpoint(max-width $narrow) {
+      @include container(90%);
+      .topics {
+        .column4 {
+          @include span(12);
+        }//column4
+      }//topics
+    }// breakpoint
+    @include breakpoint(max-width $medium) {
+      @include container(90%);
+
+    }// breakpoint
+    @include breakpoint(max-width $wide) {
+      @include container(90%);
+    }// breakpoint
+  }// container
+}// helpTopics

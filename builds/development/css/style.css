@@ -1065,7 +1065,7 @@ footer .copyright_line {
 .clients .container .sectionTitle h5 {
   font-size: 1em;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 1;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1073,7 +1073,7 @@ footer .copyright_line {
 .clients .container .sectionTitle h2 {
   font-size: 3em;
   font-weight: 200;
-  line-height: 150%;
+  line-height: 1;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1116,6 +1116,167 @@ footer .copyright_line {
 /* line 46, ../../../components/sass/modules/_clients.scss */
 .clients .container .nav-justified li a img {
   max-width: 100%;
+}
+
+/* line 5, ../../../components/sass/modules/_helpTopics.scss */
+.helpTopics .container {
+  max-width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+  padding: 30px 0;
+}
+/* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.helpTopics .container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 12, ../../../components/sass/modules/_helpTopics.scss */
+.helpTopics .container .text-left h5 {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1;
+  color: #000000;
+  text-transform: uppercase;
+}
+/* line 19, ../../../components/sass/modules/_helpTopics.scss */
+.helpTopics .container .text-left h2 {
+  font-size: 3em;
+  font-weight: 200;
+  line-height: 1;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+/* line 27, ../../../components/sass/modules/_helpTopics.scss */
+.helpTopics .container .text-left p {
+  font-weight: 200;
+  font-size: 1.125em;
+  line-height: 130%;
+  margin-bottom: 30px;
+}
+/* line 35, ../../../components/sass/modules/_helpTopics.scss */
+.helpTopics .container .topics .column4 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 37, ../../../components/sass/modules/_helpTopics.scss */
+.helpTopics .container .topics .column4 .text-box-right {
+  margin-bottom: 10px;
+}
+/* line 39, ../../../components/sass/modules/_helpTopics.scss */
+.helpTopics .container .topics .column4 .text-box-right h5 {
+  margin: 10px 0;
+  color: #063642;
+}
+/* line 44, ../../../components/sass/modules/_helpTopics.scss */
+.helpTopics .container .topics .column4 .text-box-right li a {
+  text-decoration: none;
+  line-height: 130%;
+  color: #333333;
+}
+@media (max-width: 650px) {
+  /* line 5, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .helpTopics .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 56, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container .topics .column4 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 58, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container .topics .column4 .text-box-right {
+    margin-bottom: 10px;
+  }
+  /* line 60, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container .topics .column4 .text-box-right h5 {
+    margin: 10px 0;
+    color: #063642;
+  }
+  /* line 65, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container .topics .column4 .text-box-right li a {
+    text-decoration: none;
+    line-height: 130%;
+    color: #333333;
+    font-size: 0.9em;
+  }
+  /* line 70, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container .topics .column4 .text-box-right li a:hover {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 400px) {
+  /* line 5, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .helpTopics .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 82, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container .topics .column4 {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+@media (max-width: 960px) {
+  /* line 5, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .helpTopics .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 5, ../../../components/sass/modules/_helpTopics.scss */
+  .helpTopics .container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .helpTopics .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
 }
 
 /* line 4, ../../../components/sass/modules/_different.scss */
