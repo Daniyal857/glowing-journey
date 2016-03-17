@@ -38,13 +38,16 @@
           margin-bottom: 10px;
           h5 {
             margin: 10px 0;
-            color: $blue;
+            color: lighten($blue,20);
           }// h5
           li {
             a {
               text-decoration: none;
               line-height: 130%;
               color: lighten($dark, 20%);
+              &:hover {
+                text-decoration: underline;
+              }
             }// a
           }// li
         }// .text-box-right

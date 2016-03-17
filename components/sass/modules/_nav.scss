@@ -12,7 +12,7 @@
         font-family: $headFont;
         text-align: center;
         text-transform: uppercase;
-        background: $navBrandBg;
+        background: lighten($blue,20);
         a {
           color: $navForeground;
           text-decoration: none;
@@ -28,7 +28,6 @@
           }//breakpoint
         } //a
       } //brand
-
       ul {
           @include span(8 at 4 of 12);
           li {

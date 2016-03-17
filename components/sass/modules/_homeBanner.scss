@@ -1,0 +1,49 @@
+// homeBanner.scss
+// =================
+
+.fullheight {
+  @include backImage('../images/Banner/banner1.jpg');
+
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(center);
+  height: 600px;
+  .hgroup {
+    @include container(100%);
+    padding: 100px 0;
+    h2 {
+      color: $light;
+      font-size: 3.125em;
+      font-weight: $normal;
+      line-height: 1.3em;
+      @include text-shadow($dark 0 0 20px);
+      text-align: center;
+      .accent1 {
+        color: lighten($blue,20);
+      }// accent1
+      @include breakpoint($medium 0) {
+        font-size: 2.125em;
+      }// breakpoint
+    }//h2
+    p {
+      text-align: center;
+      a {
+        color: $light;
+        border-color: lighten($blue,20);
+        display: inline-block;
+        text-align: center;
+        padding: .65em 1em .45em;
+        font-size: 1.25em;
+        font-weight: $bold;
+        line-height: 1.3;
+        @include border-radius(4px);
+        background: lighten($blue,20);
+        text-decoration: none;
+        margin-top: 3rem !important;
+        &:hover{
+          background: lighten($blue,30);
+        }// hover
+      }//a
+    }//p
+  }//hgroup
+} //fullheight
